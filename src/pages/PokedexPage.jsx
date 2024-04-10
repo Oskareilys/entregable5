@@ -61,6 +61,7 @@ const PokedexPage = () => {
         
         <input className='form__input-pokedex' ref={inputSearch} type="text" />
         <button className='form__btn-pokedex'>Search</button>
+        
         <SelecType setTypeSelected={setTypeSelected} />
         
         </form>
