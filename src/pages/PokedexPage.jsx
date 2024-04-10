@@ -56,13 +56,15 @@ const PokedexPage = () => {
       </header>
       <aside className="pokedex__aside">
       <h1 className="pokedex__title"><span className="pokedex__name__trainer">Welcome {trainer}</span>, here you can find your favorite pokemon</h1>
+      <div className="search__container">
       <form className="form__content-pokedex" onSubmit={handleSubmit}>
-        <div className="search__container">
+        
         <input className='form__input-pokedex' ref={inputSearch} type="text" />
         <button className='form__btn-pokedex'>Search</button>
         <SelecType setTypeSelected={setTypeSelected} />
-        </div>
+        
         </form>
+        </div>
         </aside>
       <ListPokemons pokemons={pokemonsFiltered}
       startIndex = {startIndex}
